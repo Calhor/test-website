@@ -5,12 +5,22 @@ ul {
 h1, p, li {
   font-family: "Verdana",sans-sarif;
 }
+
+.sidebar, .content, .image{
+overflow: hidden;  
+}
+
 .sidebar {
   float: left;
   width: 20%;
   height: 500px;
   background-color: red;
   overflow: hidden;
+}
+
+.sidebar ul {
+  position: absolute;
+  top: 40%;
 }
 
 .content {
@@ -27,5 +37,4 @@ h1, p, li {
   width: 40%;
   height: 100%;
   background-color: blue;
-  overflow: hidden;
 }
