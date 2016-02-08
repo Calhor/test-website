@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+h1, p, li {
+  font-family: "Verdana",sans-sarif;
+}
+.sidebar {
+  float: left;
+  width: 20%;
+  height: 500px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+  width: 70%;
+  height: 500px;
+  background-color: green;
+  overflow: hidden;
+}
+
+.image {
+  float: right;
+  width: 40%;
+  height: 100%;
+  background-color: blue;
+  overflow: hidden;
+}
