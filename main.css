@@ -1,9 +1,18 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 ul {
   list-style: none;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 h1, p, li {
-  font-family: "Verdana",sans-sarif;
+  font-family: "Arial",sans-sarif;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 .sidebar, .content, .image{
@@ -11,16 +20,36 @@ overflow: hidden;
 }
 
 .sidebar {
-  float: left;
+  display: inline-block;
   width: 20%;
   height: 500px;
-  background-color: red;
-  overflow: hidden;
+  background-color: #E8E7E3;
+  font-size: 16px;
 }
 
+
+
 .sidebar ul {
-  position: absolute;
-  top: 40%;
+  position: relative;
+  top: 30%;
+}
+
+.sidebar li {
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  width: 0;
+  height: 13px;
+  border-radius: 15px;
+  background-color: #dddddd;
+  -webkit-transition: width 0,4s;
+  transition: width 0,4s;
+  overflow:visible;
+  white-space: nowrap;
+}
+
+
+.sidebar li:hover{
+  width:100px;
 }
 
 .content {
@@ -28,13 +57,27 @@ overflow: hidden;
   position: relative;
   width: 70%;
   height: 500px;
-  background-color: green;
-  overflow: hidden;
+}
+
+.content p {
+  padding-left: 10px;
 }
 
 .image {
   float: right;
   width: 40%;
   height: 100%;
-  background-color: blue;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+.header {
+  border-top: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.footer {
+  border-bottom: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
 }
