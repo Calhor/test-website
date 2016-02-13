@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: #bababa;
+  color: black;
 }
 
 ul {
@@ -35,76 +35,107 @@ h1 {
   text-align: center;
   position: fixed;
   background-color: #f2f2f2;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
+  top: 0;
+  z-index: 1;
 }
 
 .sidebar {
   display: inline-block;
   position: relative;
-  height: 1000px;
-  width: 20%;
-  font-size: 16px;
-  margin-right: 10px;
+  width: 14%;
+  font-size: 14px;
 }
 
 .sidebar ul {
   position: fixed;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #b3b3b3;
+  width: 1%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #d9d9d9;
-  width: 15%;
-  border-radius: 0 15px 15px 0px;
+  overflow: hidden;
+  transition: width .3s ease-out;
+  z-index: 1;
+}
+
+.sidebar ul:hover {
+  width: 120px;
 }
 
 .sidebar li {
-  padding: 10px 0px 10px 0px;
-  margin: 5px;
+  padding-bottom: 10px;
+  margin: 10px;
   width: 0px;
-  height: 13px;
-  background-color: #ffdf80;
-  -webkit-transition: width .5s ease-in-out;
-  transition: width .5s, ease-in-out;
-  transition: color 
+  height: 10px;
+  background-color: #f7d26e;
+  -webkit-transition: width .5s ease-out, color .5s ease-out;
+  transition: width .5s ease-out;
   overflow: visible;
   white-space: nowrap;
-  border-top-right-radius: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 2;
 }
 
 .sidebar li:hover {
   width: 100px;
-  text-color: 
+}
+
+.sidebar li a {
+  padding-left: 10px;
+  transition: color .5s ease;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
 }
 
 .content {
-  position: relative;
   display: inline-block;
-  width: 52.5%;
-  height: 1000px;
+  position: relative;
+  vertical-align: top;
+  width: 61%;
+  top: 50px;
   overflow-y: auto;
+  z-index: -1;
 }
 
-.content p {
-  padding-left: 10px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.content h1 {
+  padding: 50px 14vw 50px 8vw;
 }
+
+.summary {
+  padding: 50px 14vw 50px 8vw;
+}
+
+.article {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .image {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 22.5%;
-  height: 1000px;
   border-left: 1px solid #d9d9d9;
   padding-left: 10px;
   border-top-right-radius: 15px;
   opacity: 0.6;
+  overflow:hidden;
+  z-index: -1;
 }
 
 .footer {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
   text-align: center;
+  width: 100%;
+  font-size: 12px;
+  padding: 10px 0 10px 0;
+  position:fixed;
+  bottom: 0%;
+  z-index: 1;
+  background-color: #f2f2f2;
 }
