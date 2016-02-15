@@ -1,4 +1,4 @@
-data = {
+var data = {
 
 new: { content: "News Check"+"\n"+"here for any news updates." ,title: "News"},
 con: { content: "Contact us"+"\n"+"Contact us at calhor@gmail.com"},
