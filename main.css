@@ -69,7 +69,7 @@ h1 {
   width: 0px;
   height: 10px;
   background-color: #f7d26e;
-  -webkit-transition: width .5s ease-out, color .5s ease-out;
+  -webkit-transition: width .5s ease-out;
   transition: width .5s ease-out;
   overflow: visible;
   white-space: nowrap;
